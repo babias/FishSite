@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedule</title>
+    <link rel="stylesheet" type="text/css" href="schedule.css" />
+</head>
+<body>
+    <header>
+        <h1>Schedule</h1>
+    </header>
+    <table>
+        <thead>
+            <tr>
+                <td></td>
+                <td>Sunday</td>
+                <td>Monday</td>
+                <td>Tuesday</td>
+                <td>Wednesday</td>
+                <td>Thursday</td>
+                <td>Friday</td>
+                <td>Saturday</td>
+            </tr>
+        </thead>
+        <tr>
+            <td>Morning</td>
+            <td rowspan="3" style="background-color: rgb(139, 230, 186)">Unavailable</td>
+            <td>Travel</td>
+            <td>Meeting</td>
+            <td>Meeting</td>
+            <td>Presentation</td>
+            <td>Travel</td>
+            <td rowspan="2" style="background-color: aquamarine;">Unavailable</td>
+        </tr>
+        <tr>
+            <td>Noon</td>
+            <td colspan="5" style="color: black;">Project review</td>
+        </tr>
+        <tr>
+            <td>Afternoon</td>
+            <td></td>
+            <td>Travel</td>
+            <td></td>
+            <td>Client Meeting</td>
+            <td>Travel</td>
+            <td>Project start</td>
+        </tr>          
+    </table>
+
+    <article>
+        <p>
+            Fill out below application for our dispatch team. An agent will get back to you with an estimate.
+        </p>
+    </article>
+
+    <form>
+        <div class="customerrequest">
+        <form action="https://www.google.com/">
+      
+          <label for="name">First and last name</label>
+          <input type="text" id="name" name="name" placeholder="Your first and last name..">
+
+          <label for="phone">Phone number</label>
+          <input type="text" id="phone" name="phone" placeholder="Type your phone number..">
+                  
+          <label for="country">Country</label>
+          <select id="country" name="country">
+            <option value="romania">Romania</option>
+            <option value="bulgaria">Bulgaria</option>
+            <option value="usa">USA</option>
+          </select>
+                                  
+          <label for="description">Product description</label>
+          <textarea id="description" name="subject" placeholder="Describe what product you need.." style="height:100px"></textarea>
+
+          <label for="quatity">Quatity</label>
+          <p></p>
+          <label for="quantity">10</label>
+          <input type="radio" name="quatity1" id="quatity1" value="10">
+          <label for="quantity">50</label>
+          <input type="radio" name="quatity2" id="quatity2" value="50">
+          <label for="quantity">100</label>
+          <input type="radio" name="quatity3" id="quatity3" value="100">
+
+          <p>Options</p>
+
+          <input type="checkbox" id="option1" name="food" value="curry"/>
+          <label for="delivery">Delivery</label>
+          <input type="checkbox" id="option2" name="food" value="icecream"/>
+          <label for="insurance">Insurance</label>
+                   
+          <p></p>
+
+          <input type="submit" value="Submit">
+      
+        </form>
+      
+    </form>
+
+
+    
+</body>
+</html>
