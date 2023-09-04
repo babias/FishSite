@@ -1,0 +1,191 @@
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  /* Header */
+  header {
+    background-color: #23176698;
+    color: #fff;
+    display: flex;
+    justify-content: space-between; /* Align items with space between */
+    align-items: center;
+    padding: 10px;
+  }
+  .logo-container {
+    display: flex;
+    align-items: center;
+  }
+  .logo {
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+    border-radius: 10px;
+  }
+  h1 {
+    font-size: 1.5em;
+    margin: 0;
+    width: 50%;
+  }
+  
+  /* Navigation Bar */
+  nav {
+    background-color: #5e5d5d;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    margin-top: 10px;
+  }
+  nav button {
+    border: none;
+    font-size: 1em;
+    /*cursor: pointer; */
+    width: 30%;
+    padding: 8px 15px;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    /*transition: background-color 0.3s; */
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  nav button.home {
+    background-color: #6d6c6c;
+  }
+  nav button.about {
+    background-color: #6d6c6c;
+  }
+  nav button.contact {
+    background-color: #6d6c6c;
+  }
+  nav button:hover {
+    /*background-color: transparent; */
+    color: white;
+  }
+  nav a {
+    color: white; /* Set link text color */
+    text-decoration: none; /* Remove underline from link so it looks more like a button */
+  }
+  nav a:hover {
+    color: red; /* Change text color on hover */
+  }
+  nav button.active {   /* Add nav button color just on the active page */
+    background-color: #2ecc71; 
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #444;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+  .footer-logo-container {
+    display: flex;
+    align-items: center;
+  }
+  .footer-logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    border-radius: 5px;
+  }
+  .footer-text {
+    text-align: center;
+    flex: 1;
+  }
+  
+  /* Contact form */
+  .contact-form {
+    margin: 20px auto;
+    max-width: 70%;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+  }
+  .contact-form label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  .contact-form input,.contact-form textarea {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  .contact-form button {
+    background-color: #444;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .contact-form label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  .contact-form div {
+     display: flex; /* Display radio buttons side by side */
+     /*align-items: baseline; /* Vertically align radio buttons */
+     margin-top: 10px;
+     justify-content: center;
+  }
+  /*  Add spacing between radio buttons
+  .contact-form input[type="radio"] {
+    margin-right: 5px;  
+  }*/
+  .radio-buttons {
+    display: flex;
+    gap: 5%; /* Adjust the gap between radio buttons as needed */
+    align-items: center;
+  }
+
+/* Main Section Styles */
+.main {
+    /* Adjust the width percentage as needed */
+    width: 60%;
+    float: left; /* Float the main section to the left */
+    /* Add other styles for the main section */
+  }
+  
+  .sub-section {
+    /* Add styles for sub-sections in the main section */
+    /* Ensure each sub-section has the same height and scales */
+    /* You can use flexbox or other CSS techniques for this */
+  }
+  
+  /* Side Section Styles */
+  .side {
+    /* Add styles for the side section */
+    /* This will make it sit next to the main section on larger screens */
+  }
+  
+  /* Add responsive styles for smaller screens */
+  @media screen and (max-width: 768px) {
+    .main {
+      width: 100%; /* Full width on smaller screens */
+      float: none; /* Clear the float */
+      /* Add other styles for smaller screens */
+    }
+  
+    .side {
+      /* Styles for the side section on smaller screens */
+      /* It will be below the main section */
+    }
+  
+    .sub-section {
+      /* Adjust styles for sub-sections on smaller screens */
+    }
+  }
+
+  .page{
+    display: flex;
+  }
+
+  
