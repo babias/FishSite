@@ -182,11 +182,6 @@ footer {
   text-align: center;
 }
 
-.side-section:hover {
-  /*background-color: transparent; */
-  s
-}
-
 /* Add responsive styles for smaller screens */
 @media screen and (max-width: 768px) {
   .main {
