@@ -12,6 +12,8 @@ header {
   justify-content: space-between; /* Align items with space between */
   align-items: center;
   padding: 10px;
+  font-family: 'Courgette', cursive;
+  font-size:x-large
 }
 .logo-container {
   display: flex;
@@ -148,22 +150,40 @@ footer {
 .main {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(33%, 1fr)); /* Adjust as needed */
-  gap: 2px; /* Adjust the gap between sub-sections */
-  width:70%;
-  float: left;  
-}
-.sub-section {
-  background-color: #f4f4f4;
-  border: 1px solid #ccc;
-  padding: 10px;
-  border-radius: 2px;
-  text-align: center;
+  gap: 5px; /* Adjust the gap between sub-sections */
+  width:68%;
+  float: left;
+  padding-top: 15px;  
+  padding-bottom: 15px;
+  padding-left: 1%;
 }
 
 /* Side Section Styles */
 .side {
   float: right;
-  width: 30%;
+  width: 26%;
+  padding:2%;
+  
+ }
+ 
+ .sub-section {
+  background-color: #f4f4f4;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.side-section {
+  background-color: #2ecc71;
+  border: 10px solid white;
+  padding: 10px;
+  text-align: center;
+}
+
+.side-section:hover {
+  /*background-color: transparent; */
+  s
 }
 
 /* Add responsive styles for smaller screens */
@@ -175,13 +195,10 @@ footer {
     float: none;   
   }
   .side {
-    float: right;
+    float: none;
     width: 100%;
   }
 }
 
-.clearfix::after {
-  content: "";
-  display: table;
-  clear: both;
-}
+
+
