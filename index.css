@@ -131,15 +131,12 @@ footer {
   margin-bottom: 5px;
 }
 .contact-form div {
-   display: flex; /* Display radio buttons side by side */
-   /*align-items: baseline; /* Vertically align radio buttons */
+   display: flex; /* buttons side by side */
+   /*align-items: baseline; Vertically align radio buttons */
    margin-top: 10px;
    justify-content: center;
 }
-/*  Add spacing between radio buttons
-.contact-form input[type="radio"] {
-  margin-right: 5px;  
-}*/
+
 .radio-buttons {
   display: flex;
   gap: 5%; /* Adjust the gap between radio buttons as needed */
@@ -182,22 +179,7 @@ footer {
   text-align: center;
 }
 
-/* Add responsive styles for smaller screens */
-@media screen and (max-width: 768px) {
-  .main {
-    grid-template-columns: repeat(auto-fill, minmax(100%, 1fr)); /* Adjust for smaller screens */
-    gap: 2px; /* Adjust the gap for smaller screens */  
-    width: 100%; 
-    float: none;   
-  }
-  .side {
-    float: none;
-    width: 100%;
-  }
-}
-
-
-/* ABOUT */
+/* About */
 
 .container {
   display: flex;
@@ -216,6 +198,11 @@ footer {
   margin-bottom: 10px;
   text-decoration: none;
   color: #333;
+}
+
+.side-menu a:hover{
+  color: red;
+  font-weight: bolder;
 }
 
 /* Main Section Styles */
@@ -255,12 +242,19 @@ transition: transform 0.3s ease; /* Animation on hover */
   font-weight: bold;
 }
 
-/* Add media query for responsive layout */
+/* Add responsive styles for smaller screens */
 @media screen and (max-width: 768px) {
+  .main {
+    grid-template-columns: repeat(auto-fill, minmax(100%, 1fr)); /* Adjust for smaller screens */
+    gap: 2px; /* Adjust the gap for smaller screens */  
+    width: 100%; 
+    float: none;   
+  }
+  .side {
+    float: none;
+    width: 100%;
+  }
   .main-section .item {
     width: 100%; /* Single column on smaller screens */
   }
 }
-
-
-
