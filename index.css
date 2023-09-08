@@ -190,8 +190,8 @@ footer {
   width: 200px; /* Adjust as needed */
   background-color: #f4f4f4;
   padding: 20px;
-  height: 100vh; /* Takes full viewport height */
-  overflow-y: scroll; /* Add scrollbar when content overflows */
+  height: 100%; /* Takes full viewport height */
+  margin-top: 20px;
 }
 .side-menu a {
   display: block;
@@ -207,7 +207,7 @@ footer {
 
 /* Main Section Styles */
 .main-section {
-flex: 1;
+flex: 2;
 padding: 20px;
 display: flex;
 flex-direction: row; /* Display items in rows */
@@ -257,4 +257,5 @@ transition: transform 0.3s ease; /* Animation on hover */
   .main-section .item {
     width: 100%; /* Single column on smaller screens */
   }
+  
 }
