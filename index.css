@@ -9,7 +9,7 @@ header {
   background-color: #23176698;
   color: #fff;
   display: flex;
-  justify-content: space-between; /* Align items with space between */
+  justify-content: space-between; /* align items with space between */
   align-items: center;
   padding: 10px;
   font-family: 'Courgette', cursive;
@@ -64,13 +64,13 @@ nav button:hover {
   color: white;
 }
 nav a {
-  color: white; /* Set link text color */
-  text-decoration: none; /* Remove underline from link so it looks more like a button */
+  color: white; /* link text color */
+  text-decoration: none; /* remove underline from link so it looks more like a button */
 }
 nav a:hover {
-  color: red; /* Change text color on hover */
+  color: red; /* change text color on hover */
 }
-nav button.active {   /* Add nav button color just on the active page */
+nav button.active {   /* add nav button color just on the active page */
   background-color: #2ecc71; 
 }
 
@@ -125,7 +125,6 @@ footer {
   cursor: pointer;
   border-radius: 5px;
 }
-
 .contact-form label {
   display: block;
   margin-bottom: 5px;
@@ -136,18 +135,17 @@ footer {
    margin-top: 10px;
    justify-content: center;
 }
-
 .radio-buttons {
   display: flex;
-  gap: 5%; /* Adjust the gap between radio buttons as needed */
+  gap: 5%; /* gap between radio buttons*/
   align-items: center;
 }
 
 /* Main Section Styles */
 .main {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(33%, 1fr)); /* Adjust as needed */
-  gap: 5px; /* Adjust the gap between sub-sections */
+  grid-template-columns: repeat(auto-fill, minmax(33%, 1fr));
+  gap: 5px; /* gap between sub-sections */
   width:68%;
   float: left;
   padding-top: 15px;  
@@ -160,18 +158,15 @@ footer {
   float: right;
   width: 26%;
   padding:2%;
-  font-weight: bolder;
-  
+  font-weight: bolder;  
  }
- 
- .sub-section {
+.sub-section {
   background-color: #f4f4f4;
   border: 1px solid #ccc;
   padding: 10px;
   border-radius: 5px;
   text-align: center;
 }
-
 .side-section {
   background-color: #2ecc71;
   border: 10px solid white;
@@ -180,7 +175,6 @@ footer {
 }
 
 /* About */
-
 .container {
   display: flex;
 }
@@ -199,7 +193,6 @@ footer {
   text-decoration: none;
   color: #333;
 }
-
 .side-menu a:hover{
   color: red;
   font-weight: bolder;
@@ -210,21 +203,21 @@ footer {
 flex: 2;
 padding: 20px;
 display: flex;
-flex-direction: row; /* Display items in rows */
-flex-wrap: wrap; /* Allow items to wrap to the next row */
+flex-direction: row; /* display item in rows */
+flex-wrap: wrap; /* wrap to the next row */
 gap: 20px;
 justify-content: space-between;
 }
 .item {
-width:45%; /* Two items per row with some gap */
+width:45%; 
 background-color: #fff;
 border: 1px solid #ddd;
 padding: 20px;
 box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
-transition: transform 0.3s ease; /* Animation on hover */
+transition: transform 0.3s ease; /* hover animation, smooth transition */
 }
 .item:hover {
-  transform: scale(1.05); /* Scale on hover */
+  transform: scale(1.05); /* scale on hover */
 }
 .item img {
   max-width: 100%;
@@ -238,7 +231,7 @@ transition: transform 0.3s ease; /* Animation on hover */
   text-align: center;
   margin-top: 10px;
   text-decoration: none;
-  color: #2ecc71; /* Green color for the link */
+  color: #2ecc71; 
   font-weight: bold;
 }
 
