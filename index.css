@@ -60,7 +60,6 @@ nav button.contact {
   background-color: #6d6c6c;
 }
 nav button:hover {
-  /*background-color: transparent; */
   color: white;
 }
 nav a {
@@ -131,7 +130,6 @@ footer {
 }
 .contact-form div {
    display: flex; /* buttons side by side */
-   /*align-items: baseline; Vertically align radio buttons */
    margin-top: 10px;
    justify-content: center;
 }
@@ -181,10 +179,10 @@ footer {
 
 /* Side Menu Styles */
 .side-menu {
-  width: 200px; /* Adjust as needed */
+  width: 200px;
   background-color: #f4f4f4;
   padding: 20px;
-  height: 100%; /* Takes full viewport height */
+  height: 100%;
   margin-top: 20px;
 }
 .side-menu a {
