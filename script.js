@@ -5,7 +5,6 @@ const colorDisplay = document.getElementById("color-display");
 const clearCanvasButton = document.getElementById("clear-canvas");
 
 let selectedColor = "black";
-let customColors = [];
 
 // default line width
 drawing.lineWidth = 2; // You can adjust the line width as needed

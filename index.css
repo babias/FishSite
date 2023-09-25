@@ -271,11 +271,13 @@ transition: transform 0.3s ease; /* hover animation, smooth transition */
   cursor: pointer;
 }
 .color-display {
-  width: 70px;
+  width: 90px;
   height: 70px;
-  border: 2px solid white;
+  border: 2px solid gray;
   margin-bottom: 10px;
   margin-top: 10px;
+  text-align: center;
+  color: white;
 }
 canvas {
   border: 2px solid black;
