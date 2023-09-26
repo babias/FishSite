@@ -31,11 +31,20 @@
           <div class="color-button" style="background-color: green;"></div>
           <div class="color-button" style="background-color: yellow;"></div>
           <div class="color-button" style="background-color: black;"></div>    
-          <button id="clear-canvas">Clear</button>          
+          <input type="color" id="color-picker" value="#fcfcfc">        
+          <button id="clear-canvas">Clear</button>  
       </div>
       <canvas id="canvas" width="800" height="500"></canvas>
       <div class="controls">
-          <div class="color-display" id="color-display" style="background-color:black;">YOU SELECTED THIS COLOR</div>          
+        <div id="color-sliders">
+          <label for="red-slider">Red:</label>
+          <input type="range" id="red-slider" min="0" max="255" value="0">
+          <label for="green-slider">Green:</label>
+          <input type="range" id="green-slider" min="0" max="255" value="0">          
+          <label for="blue-slider">Blue:</label>
+          <input type="range" id="blue-slider" min="0" max="255" value="0">
+        </div>        
+        <div class="color-display" id="color-display" style="background-color:black;">YOU SELECTED THIS COLOR</div>  
       </div>
   </div>
 

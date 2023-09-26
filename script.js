@@ -3,6 +3,10 @@ const drawing = canvas.getContext("2d");
 const colorButtons = document.querySelectorAll(".color-button");
 const colorDisplay = document.getElementById("color-display");
 const clearCanvasButton = document.getElementById("clear-canvas");
+const colorPicker = document.getElementById("color-picker");
+const redSlider = document.getElementById("red-slider");
+const greenSlider = document.getElementById("green-slider");
+const blueSlider = document.getElementById("blue-slider");
 
 let selectedColor = "black";
 
@@ -41,4 +45,20 @@ colorButtons.forEach((button) => {
 clearCanvasButton.addEventListener("click", () => {
     drawing.clearRect(0, 0, canvas.width, canvas.height);
 });
+
+// event listener for color picker
+redSlider.addEventListener("input", updateColor);
+greenSlider.addEventListener("input", updateColor);
+blueSlider.addEventListener("input", updateColor);
+
+// function to select color based on slider values
+function updateColor() {
+    const redValue = redSlider.value;
+    const greenValue = greenSlider.value;
+    const blueValue = blueSlider.value;
+    selectedColor = `rgb(${redValue},${greenValue},${blueValue})`;
+    colorDisplay.style.backgroundColor = selectedColor;
+    drawing.strokeStyle = selectedColor; 
+};
+
 
