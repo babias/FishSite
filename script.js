@@ -46,6 +46,12 @@ clearCanvasButton.addEventListener("click", () => {
     drawing.clearRect(0, 0, canvas.width, canvas.height);
 });
 
+colorPicker.addEventListener("input", () => {
+    selectedColor = colorPicker.value;
+    colorDisplay.style.backgroundColor = selectedColor;
+    drawing.strokeStyle = selectedColor;
+});
+
 // event listener for color picker
 redSlider.addEventListener("input", updateColor);
 greenSlider.addEventListener("input", updateColor);
@@ -60,5 +66,7 @@ function updateColor() {
     colorDisplay.style.backgroundColor = selectedColor;
     drawing.strokeStyle = selectedColor; 
 };
+
+updateColor();
 
 
