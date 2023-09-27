@@ -7,16 +7,28 @@ const colorPicker = document.getElementById("color-picker");
 const redSlider = document.getElementById("red-slider");
 const greenSlider = document.getElementById("green-slider");
 const blueSlider = document.getElementById("blue-slider");
+const eraser = document.getElementById("eraser-button")
 
 let selectedColor = "black";
 
 // default line width
-drawing.lineWidth = 2; // You can adjust the line width as needed
+drawing.lineWidth = 2; // line width
+let eraserMode = false; // will be true only when erase button is active
 
 // function to draw on the canvas
+//function draw(e) {
+//    drawing.lineTo(e.clientX - canvas.getBoundingClientRect().left, e.clientY - canvas.getBoundingClientRect().top);
+//    drawing.stroke();
+//}
+
+// function to draw or erase on the canvas
 function draw(e) {
-    drawing.lineTo(e.clientX - canvas.getBoundingClientRect().left, e.clientY - canvas.getBoundingClientRect().top);
-    drawing.stroke();
+    if (eraserMode) {
+        drawing.clearRect(e.clientX - canvas.getBoundingClientRect().left - 5, e.clientY - canvas.getBoundingClientRect().top - 5, 10, 10); // will draw a 10x10 rectangle
+    } else {
+        drawing.lineTo(e.clientX - canvas.getBoundingClientRect().left, e.clientY - canvas.getBoundingClientRect().top);
+        drawing.stroke();
+    }
 }
 
 // event listener for mouse movement and actions on the canvas
@@ -38,6 +50,7 @@ colorButtons.forEach((button) => {
         selectedColor = button.style.backgroundColor;
         colorDisplay.style.backgroundColor = selectedColor;
         drawing.strokeStyle = selectedColor; // will update the drawing color
+        eraserMode = false; // will keep eraser "off"
     });
 });
 
@@ -50,6 +63,7 @@ colorPicker.addEventListener("input", () => {
     selectedColor = colorPicker.value;
     colorDisplay.style.backgroundColor = selectedColor;
     drawing.strokeStyle = selectedColor;
+    eraserMode = false; // will keep eraser "off"
 });
 
 // event listener for color picker
@@ -65,8 +79,15 @@ function updateColor() {
     selectedColor = `rgb(${redValue},${greenValue},${blueValue})`;
     colorDisplay.style.backgroundColor = selectedColor;
     drawing.strokeStyle = selectedColor; 
+    eraserMode = false; // will keep eraser "off"
 };
 
-updateColor();
+// event listener for eraser button
+eraser.addEventListener("click", () => {
+    eraserMode = true; // will enable eraser mode, this will change the draw/erase fuction to erase mode
+    selectedColor = "white"; // will actually color with white, same as the background color :)
+    drawing.strokeStyle = selectedColor;
+    colorDisplay.style.backgroundColor = selectedColor;
+});
 
 
