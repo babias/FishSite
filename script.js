@@ -24,7 +24,7 @@ let eraserMode = false; // will be true only when erase button is active
 // function to draw or erase on the canvas
 function draw(e) {
     if (eraserMode) {
-        drawing.clearRect(e.clientX - canvas.getBoundingClientRect().left - 5, e.clientY - canvas.getBoundingClientRect().top - 5, 10, 10); // will draw a 10x10 rectangle
+        drawing.clearRect(e.clientX - canvas.getBoundingClientRect().left - 5, e.clientY - canvas.getBoundingClientRect().top - 5, 10, 10); // will clear a 10x10 rectangle
     } else {
         drawing.lineTo(e.clientX - canvas.getBoundingClientRect().left, e.clientY - canvas.getBoundingClientRect().top);
         drawing.stroke();
@@ -56,7 +56,7 @@ colorButtons.forEach((button) => {
 
 // event listener to clear the canvas
 clearCanvasButton.addEventListener("click", () => {
-    drawing.clearRect(0, 0, canvas.width, canvas.height);
+    drawing.clearRect(0, 0, canvas.width, canvas.height); // will actually draw a rectagle same size as the canvas
 });
 
 colorPicker.addEventListener("input", () => {
@@ -85,7 +85,6 @@ function updateColor() {
 // event listener for eraser button
 eraser.addEventListener("click", () => {
     eraserMode = true; // will enable eraser mode, this will change the draw/erase fuction to erase mode
-    selectedColor = "white"; // will actually color with white, same as the background color :)
     drawing.strokeStyle = selectedColor;
     colorDisplay.style.backgroundColor = selectedColor;
 });
